@@ -6,7 +6,7 @@ export default function HomePage() {
     <div className="relative h-screen w-full overflow-hidden">
       {/* Hero image */}
       <Image
-        src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1600&q=80&f=auto"
+        src="https://res.cloudinary.com/dsxqzjfjk/image/upload/w_1600,q_auto,f_auto/montreal_midnight_blue_20260327_151327_ycgbxo"
         alt="Still Stories — Street Photography"
         fill
         priority
@@ -21,7 +21,7 @@ export default function HomePage() {
       <div className="absolute inset-0 flex flex-col justify-end pb-20 px-8 md:px-16 lg:px-24">
         {/* Category tags */}
         <div className="flex gap-4 mb-6">
-          {["candid", "urban", "night", "people"].map((tag) => (
+          {["candid", "urban", "night", "cars"].map((tag) => (
             <span
               key={tag}
               className="text-white/50 text-xs tracking-widest uppercase"

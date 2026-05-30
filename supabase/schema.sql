@@ -4,7 +4,7 @@
 CREATE TABLE IF NOT EXISTS photos (
   id SERIAL PRIMARY KEY,
   title VARCHAR(255),
-  category VARCHAR(100) NOT NULL CHECK (category IN ('candid', 'urban', 'night', 'people')),
+  category VARCHAR(100) NOT NULL CHECK (category IN ('candid', 'urban', 'night', 'cars')),
   cloudinary_url TEXT NOT NULL,
   cloudinary_public_id TEXT NOT NULL,
   uploaded_at TIMESTAMP DEFAULT NOW()

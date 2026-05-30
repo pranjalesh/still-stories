@@ -17,7 +17,7 @@ export default function AboutPage() {
         {/* Profile photo */}
         <div className="relative aspect-[3/4] bg-surface overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80&f=auto"
+            src="https://res.cloudinary.com/dsxqzjfjk/image/upload/w_600,q_auto,f_auto/6118F9B7-BBC6-401F-AEE8-EED585C371F3_1_105_c_ij5e8o"
             alt="Photographer profile"
             fill
             className="object-cover object-center"
@@ -56,7 +56,7 @@ export default function AboutPage() {
               Specialities
             </p>
             <div className="flex flex-wrap gap-3">
-              {["Candid", "Urban", "Night", "People"].map((cat) => (
+              {["Candid", "Urban", "Night", "Cars"].map((cat) => (
                 <span
                   key={cat}
                   className="border border-border text-white/60 text-xs tracking-widest uppercase px-3 py-1.5"

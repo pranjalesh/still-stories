@@ -45,16 +45,16 @@ INSERT INTO photos (title, category, cloudinary_url, cloudinary_public_id) VALUE
     'still-stories/night/night-02'
   ),
 
-  -- people (2)
+  -- cars (2)
   (
     'The vendor',
-    'people',
-    'https://res.cloudinary.com/demo/image/upload/w_800,q_auto,f_auto/still-stories/people/people-01',
-    'still-stories/people/people-01'
+    'cars',
+    'https://res.cloudinary.com/demo/image/upload/w_800,q_auto,f_auto/still-stories/cars/cars-01',
+    'still-stories/cars/cars-01'
   ),
   (
     'Waiting for the bus',
-    'people',
-    'https://res.cloudinary.com/demo/image/upload/w_800,q_auto,f_auto/still-stories/people/people-02',
-    'still-stories/people/people-02'
+    'cars',
+    'https://res.cloudinary.com/demo/image/upload/w_800,q_auto,f_auto/still-stories/cars/cars-02',
+    'still-stories/cars/cars-02'
   );

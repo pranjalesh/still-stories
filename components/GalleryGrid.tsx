@@ -3,11 +3,20 @@
 import { useState } from "react";
 import Image from "next/image";
 import clsx from "clsx";
-import type { Photo, Category } from "@/lib/supabase";
+import type { Category } from "@/lib/supabase";
 import { CATEGORIES } from "@/lib/supabase";
 
+type GalleryPhoto = {
+  id: string | number;
+  title: string;
+  category: Category;
+  cloudinary_url: string;
+  cloudinary_public_id: string;
+  uploaded_at: string;
+};
+
 type Props = {
-  photos: Photo[];
+  photos: GalleryPhoto[];
 };
 
 export default function GalleryGrid({ photos }: Props) {

@@ -44,7 +44,7 @@ except ImportError:
     sys.exit(1)
 
 
-VALID_CATEGORIES = {"candid", "urban", "night", "people"}
+VALID_CATEGORIES = {"candid", "urban", "night", "cars"}
 
 
 def parse_args() -> argparse.Namespace:

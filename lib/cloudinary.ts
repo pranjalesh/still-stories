@@ -28,18 +28,18 @@ export function buildCloudinaryUrl(publicId: string): string {
 }
 
 /**
- * Fetch all images from a category folder using prefix-based lookup.
+ * Fetch all images from a category folder.
+ * Uses resources_by_asset_folder (newer Cloudinary accounts).
  * Folder structure: still-stories/{category}
  */
 export async function getPhotosByCategory(
   category: string
 ): Promise<CloudinaryResource[]> {
   try {
-    const result = await cloudinary.api.resources({
-      type: "upload",
-      prefix: `still-stories/${category}`,
-      max_results: 100,
-    });
+    const result = await cloudinary.api.resources_by_asset_folder(
+      `still-stories/${category}`,
+      { max_results: 100, resource_type: "image" }
+    );
 
     return (result.resources as CloudinaryResource[]).map((r) => ({
       ...r,

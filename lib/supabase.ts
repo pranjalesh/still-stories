@@ -9,9 +9,9 @@ export type Photo = {
   uploaded_at: string;
 };
 
-export type Category = "candid" | "urban" | "night" | "people";
+export type Category = "candid" | "urban" | "night" | "cars";
 
-export const CATEGORIES: Category[] = ["candid", "urban", "night", "people"];
+export const CATEGORIES: Category[] = ["candid", "urban", "night", "cars"];
 
 // Lazy singleton — avoids module-level crash when env vars are absent at build time
 let _client: SupabaseClient | null = null;
