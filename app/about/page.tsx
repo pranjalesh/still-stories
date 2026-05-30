@@ -29,24 +29,24 @@ export default function AboutPage() {
         {/* Bio */}
         <div className="flex flex-col justify-start space-y-6 pt-2">
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
-            PG — Street Photographer
+            PG — Montreal Photographer
           </h2>
 
           <div className="space-y-4 text-white/70 leading-relaxed text-sm md:text-base">
             <p>
-              I chase the unrepeatable — the glance between strangers, the
-              geometry of shadow on wet concrete, the solitude buried inside
-              rush hour. My camera is a quiet witness.
+              I&apos;m a Montreal-based photographer who started photography as a hobby
+              and never really stopped. What began as a way to explore the city
+              became a way of seeing it — noticing fleeting expressions, interesting
+              light, quiet moments, and the beauty hidden in everyday scenes.
             </p>
             <p>
-              Working across the four modes of street photography — candid
-              portraits, urban architecture, night atmospheres, and the
-              unguarded moments of people in public — I look for images that
-              hold still long enough to say something true.
+              I enjoy working across candid street photography, urban architecture,
+              night scenes, and documentary-style moments. My goal isn&apos;t to stage
+              stories but to find them as they naturally unfold.
             </p>
             <p>
-              Based wherever the light is interesting. Available for editorial
-              commissions, personal sessions, and fine-art prints.
+              Still learning, still exploring, and always chasing the unrepeatable.
+              Based in Montreal, wherever the light is interesting.
             </p>
           </div>
 
