@@ -26,9 +26,9 @@ export default function GalleryGrid({ photos }: Props) {
   const filtered =
     active === "all" ? photos : photos.filter((p) => p.category === active);
 
-  // Full-res URL — drop transformations so Cloudinary serves the original
+  // Full-res URL — remove w_800 cap so Cloudinary serves the original size
   const fullResUrl = (photo: GalleryPhoto) =>
-    photo.cloudinary_url.replace(/\/w_800,q_auto,f_auto\//, "/q_auto,f_auto/");
+    photo.cloudinary_url.replace(/,?w_800,?/, "").replace(/,,/, ",");
 
   const openLightbox = (photo: GalleryPhoto) => setLightbox(photo);
   const closeLightbox = () => setLightbox(null);
