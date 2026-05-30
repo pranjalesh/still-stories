@@ -73,14 +73,6 @@ export default function GalleryGrid({ photos }: Props) {
                   loading="lazy"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-xs tracking-widest uppercase">
-                    {photo.category}
-                  </p>
-                  {photo.title && (
-                    <p className="text-white/80 text-sm mt-0.5">{photo.title}</p>
-                  )}
-                </div>
               </div>
             </div>
           ))}
