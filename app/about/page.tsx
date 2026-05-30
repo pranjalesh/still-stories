@@ -29,7 +29,7 @@ export default function AboutPage() {
         {/* Bio */}
         <div className="flex flex-col justify-start space-y-6 pt-2">
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
-            PG — Montreal Photographer
+            PG
           </h2>
 
           <div className="space-y-4 text-white/70 leading-relaxed text-sm md:text-base">
