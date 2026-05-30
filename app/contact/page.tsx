@@ -30,7 +30,7 @@ export default function ContactPage() {
               Based in
             </p>
             <p className="text-white/70 text-sm">
-              Wherever the light is interesting.
+              Montreal, Canada.
             </p>
           </div>
           <div>
